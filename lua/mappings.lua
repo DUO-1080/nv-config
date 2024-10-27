@@ -33,7 +33,13 @@ map("i", "<C-S-CR>", "<ESC>$a;<c-g>u<ESC>zt", { desc = "Auto Complete Statement"
 map("i", "<A-j>", "<ESC>:m .+1<CR>==", { desc = "Move Line Up" })
 map("i", "<A-k>", "<ESC>:m .-2<CR>==", { desc = "Move Line Down" })
 
-map("t", "<C-\\>", "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
+map("t", "<C-\\>", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" })
+
+map("n", "<leader>fc", "<cmd>Telescope neoclip<CR>", { desc = "Clipboard" })
+map("n", "<leader>fg", "<cmd>Telescope git_status<CR>", { desc = "Telescope Git Status" })
+
+map("v", "<leader>cc", "<cmd>CodeSnap<CR>")
+map("v", "<leader>cs", "<cmd>CodeSnapSave<CR>")
 
 -- nvim tree
 map("n", "<leader>o", function()
