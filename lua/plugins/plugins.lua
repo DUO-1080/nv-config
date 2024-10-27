@@ -42,4 +42,12 @@ return {
             { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
         },
     },
+    {
+        "echasnovski/mini.nvim",
+        version = false,
+        event = "VeryLazy",
+        config = function()
+            require("mini.animate").setup()
+        end,
+    },
 }
